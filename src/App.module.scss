@@ -1,6 +1,3 @@
-@import '@/assets/variables.scss';
-@import '@/assets/fonts/fonts.scss';
-
 *,
 *::before,
 *::after {
@@ -13,7 +10,7 @@
 
 html,
 body {
-  background-color: var(--background-color-primary);
+  background-color: white;
   padding: 0;
   margin: 0;
 }
@@ -21,27 +18,9 @@ body {
 /* Define styles for the root window with dark - mode preference */
 
 p {
-  color: var(--text-primary-color);
+  color: black;
 }
 
 :global(.container) {
   margin: 0 20px;
-}
-
-@include Tablet() {
-  :global(.container) {
-    margin: 0 34px;
-  }
-}
-
-@include Laptop() {
-  :global(.container) {
-    margin: 0 42px;
-  }
-}
-
-@include Desktop() {
-  :global(.container) {
-    margin: 0 123px;
-  }
 }
