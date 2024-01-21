@@ -1,0 +1,25 @@
+.sidebar {
+    margin: 13px;
+    margin-right: 0px;
+    width: 30%;
+    flex-shrink: 0;
+
+    div {
+        border-right: 1px solid #0003;
+        padding: 3px 7px;
+    }
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.brand {
+    cursor: pointer;
+}
+
+.brand:hover {
+    background-color: #ddd;
+}
