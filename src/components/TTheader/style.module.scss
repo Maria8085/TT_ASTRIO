@@ -11,7 +11,12 @@
     background: white;
 }
 
-// .basket {
-//     width: 35px;
-//     height: 35px;
-// }
+.basket {
+    width: 25px;
+    height: 25px;
+
+    img {
+        width: 100%;
+        object-fit: contain;
+    }
+}

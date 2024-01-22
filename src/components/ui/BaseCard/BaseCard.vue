@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import brands from '@/task/brands.json';
 import Styles from './style.module.scss';
 import type { Product } from '@/types';
 
@@ -13,7 +14,8 @@ defineProps<{
     <div :class="Styles.name">{{ product.title }}</div>
     <div :class="Styles.brand">{{ product.brand }}</div>
     <div :class="Styles.price">
-      {{ product.regular_price.value }} {{ product.regular_price.currency }}
+      <p>{{ product.regular_price.value }} {{ product.regular_price.currency }}</p>
+      <button>+</button>
     </div>
   </div>
 </template>

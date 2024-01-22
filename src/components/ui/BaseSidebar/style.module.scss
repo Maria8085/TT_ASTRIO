@@ -1,7 +1,7 @@
 .sidebar {
     margin: 13px;
     margin-right: 0px;
-    width: 30%;
+    width: 20%;
     flex-shrink: 0;
 
     div {
@@ -20,6 +20,6 @@
     cursor: pointer;
 }
 
-.brand:hover {
-    background-color: #ddd;
+.brand:hover{
+    background-color: #eee;
 }
