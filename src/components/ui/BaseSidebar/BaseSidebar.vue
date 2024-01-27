@@ -1,25 +1,37 @@
 <script lang="ts">
 import useBrandsStore from '@/stores/brands';
 import Styles from './style.module.scss';
+import useFilterStore from '@/stores/filter';
 
 export default {
   data() {
     return {
       Styles,
-      brandsStore: useBrandsStore()
+      brandsStore: useBrandsStore(),
+      filterStore: useFilterStore()
     };
   },
-  mounted() {
-    this.brandsStore.getBrands();
+  methods: {
+    setBrand(id: number | undefined) {
+      this.filterStore.brandId = id;
+    }
   }
 };
 </script>
 
 <template>
   <div :class="Styles.sidebar">
-    <div :class="[Styles.title, Styles.brand]">All brands</div>
-    <div :class="Styles.brand" v-for="item in brandsStore.brands" :key="item.id">
+    <button type="button" :class="[Styles.title, Styles.brand]" @click="setBrand(undefined)">
+      All brands
+    </button>
+    <button
+      type="button"
+      :class="Styles.brand"
+      v-for="item in brandsStore.brands"
+      :key="item.id"
+      @click="setBrand(item.id)"
+    >
       {{ item.title }}
-    </div>
+    </button>
   </div>
 </template>

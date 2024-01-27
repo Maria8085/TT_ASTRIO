@@ -11,12 +11,29 @@
     background: white;
 }
 
-.basket {
+.cart {
     width: 25px;
     height: 25px;
+    cursor: pointer;
+    position: relative;
 
     img {
         width: 100%;
         object-fit: contain;
+    }
+
+    .count {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background-color: #119d27;
+        color: #fff;
+        right: 0;
+        top: 0;
+        text-align: center;
+        padding-top: 1px;
+        font-size: 11px;
+        border-radius: 100%;
+        transform: translate(50%, -50%);
     }
 }

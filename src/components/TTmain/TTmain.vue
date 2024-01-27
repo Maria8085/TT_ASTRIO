@@ -1,5 +1,5 @@
 <script lang="ts">
-import Catalog from '@/components/Catalog/Catalog.vue';
+import Catalog from '@/components/TTCatalog/TTCatalog.vue';
 import BaseSidebar from '@/components/ui/BaseSidebar/BaseSidebar.vue';
 import Styles from './style.module.scss';
 
