@@ -1,0 +1,65 @@
+@import '@/assets/mixins.scss';
+
+.main {
+    display: flex;
+}
+
+.noRezults {
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.wrapper {
+    padding: 20px;
+    width: 100%;
+}
+
+.title {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.titleTable {
+    font-weight: 700;
+
+    &:first-of-type {
+        text-align: center;
+    }
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.totalAmount {
+    text-align: end;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.checkoutWrap {
+    display: flex;
+    justify-content: end;
+
+    .checkout {
+        transition: all 0.15s ease-out;
+        background-color: #119d27;
+        border: none;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        white-space: nowrap;
+        box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+        font-size: 20px;
+    }
+}
+
+@include Tablet {
+    .catalog {
+        grid-template-columns: 55% 15% 15% 15%;
+    }
+}

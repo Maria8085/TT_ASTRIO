@@ -1,8 +1,19 @@
+import { createRouter, createWebHistory } from 'vue-router';
 import { createApp } from 'vue';
 import { createPinia } from 'pinia';
+import Main from '@/pages/TTmain/TTmain.vue';
+import Cart from '@/pages/TTCart/TTCart.vue';
 import App from './App.vue';
 
-const app = createApp(App);
+const router = createRouter({
+  history: createWebHistory(),
+  routes: [
+    { path: '/', component: Main },
+    { path: '/cart', component: Cart }
+  ]
+});
 
+const app = createApp(App);
 app.use(createPinia());
+app.use(router);
 app.mount('#app');

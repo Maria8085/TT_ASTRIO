@@ -1,0 +1,21 @@
+$Tabel: 768px;
+$Laptop: 1024px;
+$Desktop: 1366px;
+
+@mixin Tablet {
+  @media (min-width: $Tabel) {
+    @content;
+  }
+}
+
+@mixin Laptop {
+  @media (min-width: $Laptop) {
+    @content;
+  }
+}
+
+@mixin Desktop {
+  @media (min-width: $Desktop) {
+    @content;
+  }
+}

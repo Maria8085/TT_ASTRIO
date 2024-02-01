@@ -14,12 +14,12 @@ export default {
 
 <template>
   <header :class="Styles.header">
-    <div><img src="/TT_ASTRIO/images/logo.png" alt="" /></div>
-    <div :class="Styles.cart">
-      <img src="/TT_ASTRIO/images/cart.svg" alt="" />
+    <RouterLink to="/"><img src="/images/logo.png" alt="" /></RouterLink>
+    <RouterLink to="/cart" :class="Styles.cart">
+      <img src="/images/cart.svg" alt="" />
       <div :class="Styles.count" v-if="cartStore.countProduct > 0">
         {{ cartStore.countProduct }}
       </div>
-    </div>
+    </RouterLink>
   </header>
 </template>

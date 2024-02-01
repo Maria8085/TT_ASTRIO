@@ -1,0 +1,10 @@
+
+.selectable {
+  cursor: pointer;
+}
+
+.disabled {
+  position: relative;
+  cursor: not-allowed;
+  filter: opacity(0.5);
+}

@@ -1,0 +1,63 @@
+@import '@/assets/mixins.scss';
+
+.buttonsControl {
+    width: 80px;
+    display: flex;
+    align-items: center;
+
+    .buttonsCount {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        min-width: 60px;
+
+        .countMines,
+        .countPlus {
+            background-color: #119d27;
+            border: none;
+            color: #fff;
+            padding: 5px;
+            border-radius: 5px 0 0 5px;
+            min-width: 20px;
+        }
+
+        .countPlus {
+            border-radius: 0 5px 5px 0;
+        }
+    }
+
+    .inputCount {
+        width: 30px;
+        text-align: center;
+        border: none;
+        height: 24px;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    .addToCard {
+        transition: all .15s ease-out;
+        background-color: #119d27;
+        border: none;
+        color: #fff;
+        padding: 5px;
+        border-radius: 5px;
+        white-space: nowrap;
+        box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+        width: 100%;
+    }
+}
+
+@include Tablet {
+    .buttonsControl {
+        .inputCount {
+            width: 40px;
+        }
+    }
+}
