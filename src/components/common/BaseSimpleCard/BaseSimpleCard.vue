@@ -13,7 +13,7 @@ const brandsStore = useBrandsStore();
 
 <template>
   <div :class="Styles.card">
-    <div :class="Styles.image"><img :src="product.image" alt="" /></div>
+    <div :class="Styles.image"><img :src="'/TT_ASTRIO/' + product.image" alt="" /></div>
     <div :class="Styles.name">{{ product.title }}</div>
     <div :class="Styles.brand">
       {{

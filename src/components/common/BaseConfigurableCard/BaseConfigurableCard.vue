@@ -24,7 +24,7 @@ function setCurrentVariant(variant: Variant) {
 <template>
   <div :class="Styles.card">
     <div :class="Styles.image">
-      <img :src="currentVariant.product.image" alt="" />
+      <img :src="'/TT_ASTRIO/' + currentVariant.product.image" alt="" />
     </div>
     <div :class="Styles.name">{{ product.title }}</div>
     <div :class="Styles.brand">

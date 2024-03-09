@@ -8,8 +8,8 @@ import App from './App.vue';
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: '/', component: Main },
-    { path: '/cart', component: Cart }
+    { path: '/TT_ASTRIO/', component: Main },
+    { path: '/TT_ASTRIO/cart', component: Cart }
   ]
 });
 

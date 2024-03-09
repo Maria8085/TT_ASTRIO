@@ -36,8 +36,6 @@ const size = computed(() => {
   return undefined;
 });
 
-console.log('props', props.cartProduct);
-
 const brandsStore = useBrandsStore();
 const cartStore = useCartStore();
 </script>
@@ -45,7 +43,14 @@ const cartStore = useCartStore();
 <template>
   <div :class="Styles.info">
     <div :class="Styles.image">
-      <img :src="variant ? variant.product.image : cartProduct.product.image" alt="" />
+      <img
+        :src="
+          variant
+            ? '/TT_ASTRIO/' + variant.product.image
+            : '/TT_ASTRIO/' + cartProduct.product.image
+        "
+        alt=""
+      />
     </div>
     <div :class="Styles.name">
       {{
